@@ -6,6 +6,7 @@ If ANY item below is missing, altered, truncated, or not 100% identical to the s
 ## Verification Checklist
 - [ ] **Viewport & Reset:** Single viewport (`100vh`, `overflow: hidden`), `* { margin: 0; padding: 0; box-sizing: border-box; }`, `body` uses `'Inter', sans-serif` and font smoothing rules.
 - [ ] **Title & Fonts:** `<title>Aurai - Always-On Wellness Companion</title>`, Askan Light URL and Inter (300, 400, 500, 600) loaded, Tailwind `askan` and `inter` font families configured.
+- [ ] **Self-hosted font & favicon:** Local `@font-face` for `'Askan Light'` using `./assets/askan-light.woff2` (so it renders on GitHub Pages despite the external CDN's CORP block), and favicon `./jt.jpg`.
 - [ ] **Video & Focal Points:** Exact video URL (`import.meta.env.BASE_URL + 'aurai-hero.mp4'` — Pexels #8005852, served locally from `public/`), `autoPlay`, `loop`, `muted`, `playsInline`, `object-cover`, no dark overlay, and exact focal points (`80% center` default, `right center` on `md`, `center center` on `lg`).
 - [ ] **Top Nav & Mobile Menu:** Glass pill (`bg-black/20 backdrop-blur-md rounded-2xl border-white/10`), `"Aura"` linking to `https://jon-torlen.github.io/`, menu spacing (`ml-4 sm:ml-32 md:ml-64 lg:ml-96`), desktop `"Join the list"` button (`hidden sm:block`), and mobile menu (`Story`, `Benefits`, `Connect`, `"Join the list"`).
 - [ ] **Brand Logo:** Local image (`import.meta.env.BASE_URL + 'jt.jpg'`, served from `public/`), classes `h-5 w-5 rounded-full object-cover sm:h-7 sm:w-7`, shown next to the text `"Aura"`.
